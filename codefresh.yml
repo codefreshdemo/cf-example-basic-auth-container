@@ -17,6 +17,7 @@ steps:
   inline-composition:
     type: launch-composition
     environmentName: 'env-composition-name'
+    entry_point: auth
     composition:
       version: '2'
       services:
