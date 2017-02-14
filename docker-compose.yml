@@ -1,0 +1,13 @@
+version: '2'
+services:
+  web:
+    image: codefreshio/auth-example:master
+  auth:
+    image: codefreshio/nginx:master
+    ports:
+      - 80
+    links:
+      - web
+    environment:
+      USER: "admin"
+      PASS: "admin"

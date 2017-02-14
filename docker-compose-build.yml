@@ -1,0 +1,13 @@
+version: '2'
+services:
+  web:
+    build: .
+  auth:
+    build: ./nginx
+    ports:
+      - 80
+    links:
+      - web
+    environment:
+      USER: "admin"
+      PASS: "admin"
