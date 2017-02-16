@@ -1,0 +1,11 @@
+web:
+  build: .
+auth:
+  image: ./nginx
+  ports:
+    - 80
+  links:
+    - web
+  environment:
+    USER: "admin"
+    PASS: "admin"
