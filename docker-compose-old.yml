@@ -1,7 +1,7 @@
 web:
   build: .
 auth:
-  image: ./nginx
+  build: ./nginx
   ports:
     - 80
   links:
