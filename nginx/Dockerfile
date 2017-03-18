@@ -11,7 +11,7 @@ WORKDIR /opt
 
 #RUN apk add --no-cache gettext
 
-COPY nginx/auth.conf nginx/auth.htpasswd nginx/launch.sh ./
+COPY auth.conf auth.htpasswd launch.sh ./
 
 RUN chmod 0755 ./launch.sh
 
